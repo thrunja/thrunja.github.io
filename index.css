@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    color: black;
+}
+
+header {
+    padding: 100px 0px 10px 0px;
+}
+
+header h1 {
+    margin: 0px;
+    display: inline;
+}
+
+nav ul {
+    display: inline;
+    padding-left: 575px;
+    color: red;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 0px 0px 15px;
+}
+
+nav ul:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.monolith {
+    float: left;
+}
+
+.sketches {
+    float: right;
+}
+
+img { 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+    padding: 10px 0px;
+}
+ 
+img:hover {
+  -webkit-filter: blur(5px);
+}
