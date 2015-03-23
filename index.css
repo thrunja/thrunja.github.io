@@ -160,3 +160,6 @@ div.info {
     margin-left: auto;
     margin-right: auto;
 }
+
+.carousel-control { background: none !important; filter: none !important; progid:none !important; }
+
