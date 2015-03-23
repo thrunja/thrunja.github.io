@@ -155,3 +155,8 @@ form {
     margin-right: auto;
     margin-top: 10px;
 }
+
+div.info {
+    margin-left: auto;
+    margin-right: auto;
+}
