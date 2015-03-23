@@ -1,21 +1,38 @@
 body {
     background-color: white;
     font-family: sans-serif;
-    color: black;
+    color: #999;
+}
+
+a {
+    color: #999;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.content {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 header {
     padding: 100px 0px 10px 0px;
 }
 
-header h1 {
+h1 {
     margin: 0px;
     display: inline;
 }
 
 nav ul {
     display: inline;
-    padding-left: 575px;
+    float: right;
+    position: relative;
+    top: 17px;
 }
 
 nav ul li {
@@ -26,6 +43,7 @@ nav ul li {
 
 nav ul:hover {
     text-decoration: none;
+    color: red;
 }
 
 .li {
@@ -33,13 +51,13 @@ nav ul:hover {
 }
 
 .monolith {
-    float: left;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-    padding: 10px 0px;
+    margin-top: 10px;
+    float: left;
 }
 
 .monolith:hover {
@@ -53,94 +71,19 @@ nav ul:hover {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-    padding: 10px 0px;
+    margin-top: 10px;
 }
 
 .sketches:hover {
     -webkit-filter: blur(5px);
 }
- 
-.contactpage {
-    padding: 20px 0px 0px 0px;
-}
-
-.contact {
-    float: left;
-}
-
-.message {
-    padding-left: 500px;
-}
 
 .dividecontact {
-    float: left;
     border: 1px solid black;
-}
-
-.dividemessage {
-    float: right;
-    width: 538px;
-    border: 1px solid black;
-    margin-right: 101px;
-}
-
-form input[type="text"] {
-    background: #F0F0F0;
-    color: black;
-    border: 1px solid #BFBFBF;
-    margin: 0px 0px 2px 0px;
-    padding-left: 5px;
-    outline: 0;
-    display: inline;
-}
-
-form input[type="email"] {
-    background: #F0F0F0;
-    color: black;
-    border: 1px solid #BFBFBF;
-    margin: 2px 0px 2px 0px;
-    padding-left: 5px;
-    outline: 0;
-    display: inline-block;
-}
-
-form input[subject="subject"] {
-    background: #F0F0F0;
-    color: Black;
-    border: 1px solid #BFBFBF;
-    margin: 2px 0px 4px 0px;
-    padding-left: 5px;
-    display: inline-block;
-}
-
-textarea {
-    resize: none;
-    width: 539px;
-    height: 100px;
-    background: #F0F0F0;
-    color: black;
-    border: 1px solid #BFBFBF;
-    padding-left: 5px;
-    outline: 0;
-    display: inline-block;
-}
-
-form input[type="submit"] {
-  display: inline-block;
-  background: red;
-  color: white;
-  border: none;
-  cursor: pointer;
-    outline: 0;
 }
 
 .info {
     padding: 5px 0px 0px 0px;
-}
-
-p1 {
-    margin: 0px;
-    display: inline;
 }
 
 form {
@@ -150,9 +93,6 @@ form {
 
 .resume {
     border: 1px solid black;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 10px;
 }
 
@@ -161,5 +101,16 @@ div.info {
     margin-right: auto;
 }
 
-.carousel-control { background: none !important; filter: none !important; progid:none !important; }
+#carousel-example-generic {
+    margin-top: -28px;
+}
 
+.carousel-control { 
+    background: none !important; 
+    filter: none !important; 
+    progid:none !important; 
+}
+
+.sketch {
+    margin-top: 10px;
+}
