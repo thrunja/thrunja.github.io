@@ -16,7 +16,6 @@ header h1 {
 nav ul {
     display: inline;
     padding-left: 575px;
-    color: red;
 }
 
 nav ul li {
@@ -26,27 +25,133 @@ nav ul li {
 }
 
 nav ul:hover {
-    color: red;
     text-decoration: none;
+}
+
+.li {
+    color: red;
 }
 
 .monolith {
     float: left;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    padding: 10px 0px;
+}
+
+.monolith:hover {
+  -webkit-filter: blur(5px);
 }
 
 .sketches {
     float: right;
-}
-
-img { 
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
     padding: 10px 0px;
 }
+
+.sketches:hover {
+    -webkit-filter: blur(5px);
+}
  
-img:hover {
-  -webkit-filter: blur(5px);
+.contactpage {
+    padding: 20px 0px 0px 0px;
+}
+
+.contact {
+    float: left;
+}
+
+.message {
+    padding-left: 500px;
+}
+
+.dividecontact {
+    float: left;
+    border: 1px solid black;
+}
+
+.dividemessage {
+    float: right;
+    width: 538px;
+    border: 1px solid black;
+    margin-right: 101px;
+}
+
+form input[type="text"] {
+    background: #F0F0F0;
+    color: black;
+    border: 1px solid #BFBFBF;
+    margin: 0px 0px 2px 0px;
+    padding-left: 5px;
+    outline: 0;
+    display: inline;
+}
+
+form input[type="email"] {
+    background: #F0F0F0;
+    color: black;
+    border: 1px solid #BFBFBF;
+    margin: 2px 0px 2px 0px;
+    padding-left: 5px;
+    outline: 0;
+    display: inline-block;
+}
+
+form input[subject="subject"] {
+    background: #F0F0F0;
+    color: Black;
+    border: 1px solid #BFBFBF;
+    margin: 2px 0px 4px 0px;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+textarea {
+    resize: none;
+    width: 539px;
+    height: 100px;
+    background: #F0F0F0;
+    color: black;
+    border: 1px solid #BFBFBF;
+    padding-left: 5px;
+    outline: 0;
+    display: inline-block;
+}
+
+form input[type="submit"] {
+  display: inline-block;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+    outline: 0;
+}
+
+.info {
+    padding: 5px 0px 0px 0px;
+}
+
+p1 {
+    margin: 0px;
+    display: inline;
+}
+
+form {
+    display: inline-block;
+    padding-left: 500px;
+}
+
+.resume {
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
