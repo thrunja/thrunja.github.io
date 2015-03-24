@@ -71,8 +71,7 @@ nav ul li {
 }
 
 .sketch {
-    position: relative;
-    top: -20px;
+    margin-top: 20px;
 }
 
 
