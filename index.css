@@ -17,17 +17,13 @@ a:hover {
 }
 
 header {
-    padding: 100px 0px 10px 0px;
+    padding: 100px 0px 0px 0px;
 }
 
 h1 {
     margin: 0px;
     display: inline;
     font-weight: lighter;
-}
-
-h1:hover {
-    color: none;
 }
 
 h1 medium {
@@ -55,7 +51,6 @@ nav ul li {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-    margin-top: 10px;
 }
 
 .processbook:hover {
@@ -69,25 +64,29 @@ nav ul li {
     -ms-transition: all 1s ease;
     transition: all 1s ease;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .sketches:hover {
     -webkit-filter: blur(5px);
 }
 
-.processbooktext {
+.text1 {
     position: relative;
-    top: -266px;
+    top: -256px;
     left: 10px;
     color: white;
 }
 
-.sketchtext {
+.text2 {
     position: relative;
-    top: -55px;
+    top: -45px;
     left: 10px;
     color: white;
+}
+
+.contact {
+    position: relative;
+    top: 8px;
 }
 
 .dividecontact {
@@ -98,11 +97,9 @@ nav ul li {
     padding: 5px 0px 0px 0px;
 }
 
-
 .resume {
     border: 1px solid black;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 div.info {
@@ -111,15 +108,12 @@ div.info {
 }
 
 #carousel-example-generic {
-    margin-top: -28px;
+    position: relative;
+    top: -20px;
 }
 
 .carousel-control { 
     background: none !important; 
     filter: none !important; 
     progid:none !important; 
-}
-
-.sketch {
-    margin-top: 10px;
 }
