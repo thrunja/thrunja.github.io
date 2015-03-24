@@ -2,6 +2,9 @@ body {
     background-color: white;
     font-family: sans-serif;
     color: #999;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 a {
@@ -9,14 +12,8 @@ a {
 }
 
 a:hover {
-    color: #000;
+    color: red;
     text-decoration: none;
-}
-
-.content {
-    width: 900px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 header {
@@ -26,7 +23,18 @@ header {
 h1 {
     margin: 0px;
     display: inline;
+    font-weight: lighter;
 }
+
+h1:hover {
+    color: none;
+}
+
+h1 medium {
+    color: red;
+    font-weight: bolder;
+}
+
 
 nav ul {
     display: inline;
@@ -41,41 +49,45 @@ nav ul li {
     padding: 0px 0px 0px 15px;
 }
 
-nav ul:hover {
-    text-decoration: none;
-    color: red;
-}
-
-.li {
-    color: red;
-}
-
-.monolith {
+.processbook {
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
     margin-top: 10px;
-    float: left;
 }
 
-.monolith:hover {
+.processbook:hover {
   -webkit-filter: blur(5px);
 }
 
 .sketches {
-    float: right;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .sketches:hover {
     -webkit-filter: blur(5px);
+}
+
+.processbooktext {
+    position: relative;
+    top: -266px;
+    left: 10px;
+    color: white;
+}
+
+.sketchtext {
+    position: relative;
+    top: -55px;
+    left: 10px;
+    color: white;
 }
 
 .dividecontact {
@@ -86,14 +98,11 @@ nav ul:hover {
     padding: 5px 0px 0px 0px;
 }
 
-form {
-    display: inline-block;
-    padding-left: 500px;
-}
 
 .resume {
     border: 1px solid black;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 div.info {
