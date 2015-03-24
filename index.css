@@ -7,6 +7,10 @@ body {
     margin-left: auto;
 }
 
+strong {
+    color: red;
+}
+
 a {
     color: #999;
 }
@@ -25,14 +29,10 @@ h1 {
     display: inline;
     font-weight: lighter;
 }
+
 .nohover {
     color: #999;
 }
-medium {
-    color: red;
-    font-weight: bolder;
-}
-
 
 nav ul {
     display: inline;
