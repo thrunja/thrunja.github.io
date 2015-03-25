@@ -1,10 +1,10 @@
 body {
     background-color: white;
-    font-family: sans-serif;
-    color: #999;
+    color: black;
     width: 900px;
     margin-right: auto;
     margin-left: auto;
+    @font-face {font-family: Avenir; src: url('Avenir Next.ttc')}
 }
 
 strong {
@@ -28,6 +28,7 @@ h1 {
     margin: 0px;
     display: inline;
     font-weight: lighter;
+    font-size: 30pt;
 }
 
 .nohover {
@@ -93,20 +94,35 @@ nav ul li {
 
 .contact {
     position: relative;
-    top: 8px;
+}
+
+.contactpage {
+    position: relative;
+    top: 28px;
+    Left: 30px;
 }
 
 .dividecontact {
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .info {
     padding: 5px 0px 0px 0px;
+    position: relative;
+    top: 6px;
+}
+
+.info a {
+    color: black;
+}
+
+.info a:hover {
+    color: #999;
 }
 
 .resume {
-    border: 1px solid black;
     margin-top: 20px;
+    box-shadow: 3px 3px 10px #888888;
 }
 
 div.info {
