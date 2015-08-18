@@ -1,52 +1,126 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-        
         <title>Jack Thrun</title>
-        
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        
-        <!-- Optional theme -->
-        <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-        
-        <link href="index.css" rel="stylesheet" type="text/css">
-        
-        <link rel="icon" type="image/png" href="img/favicon.png">
-        
+        <link href = "css/bootstrap2.css" rel="stylesheet">
+        <link href = "css/bootstrap-responsive.css" rel="stylesheet">
+        <link href = "css/index.css" rel="stylesheet">
     </head>
-
+    
     <body>
-        <header>
-                <nav>
-                    <a href="index.html"><h1 class="nohover">JACK<strong>THRUN</strong></h1></a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-        </header>
         
-            <img>
-            <span><center><a href="ProcessBook.html"><img src="img/monolith.jpg" class="processbook"/></a></center></span>
-            </img>
-
-            <img>
-            <span><center><a href="sketchpage.html"><img src="img/sketchaday.jpg" class="sketches"></a></span></center>
-            </img>
+        <div class="wrapper">
+        
+        <div class="navbar navbar-fixed-top">
             
-            <div class="text1">
-                <p1>FALL SEMESTER 2014: PROCESS BOOK</p1>
+            <div class="navbar-inner">
+                
+                <div class="container">
+                    
+                    <a class="btn btn-navbar" data-toggle = "collapse" data-target = ".nav-collapse">
+                        <i class = "icon-align-justify"></i>
+                    </a>
+                    
+                    <a href="index.html" class="brand">JACK<strong>THRUN</strong></a>
+                    
+                    <div class = "nav-collapse collapse">
+                    
+                        <ul class = "nav pull-right">
+                            <li class = "dropdown">
+                            
+                                <a class = "dropdown-toggle" data-toggle = "dropdown" href="#">Projects <i class = "caret"></i></a>
+                                <ul class = "dropdown-menu">
+                                    <li><a href = "Mickey.html">Estranged Mickey</a></li>
+                                    <li><a href = "chess.html">Opulent Peril</a></li>
+                                    <li><a href = "BowlingBall.html">Bowling Ball Package</a></li>
+                                    <li><a href = "Bedmate.html">Bedmate</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href = "index.html">View All</a></li>
+                                </ul>
+                                
+                            </li>
+                            <li><a href = "Portfolio.pdf" target="_blank">Portfolio</a></li>
+                        
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+                
             </div>
-
-            <div class="text2">
-                <p1>SKETCH-A-DAY 2015</p1>
+            
+        </div>
+        
+        <div class="hero-unit">
+        
+            <div class="container">
+                <h3>Hello!</h3>
+                <p>
+                    My name is Jack. I am a second year industrial design student at the University of Cincinnati.<br>For as long as I can                               remember, I wanted to be a professional hockey player, a fire fighter, and an astronaut. 
+                    I wanted to do it all.<br>My favorite toys being Lincoln Logs and Lego, I figured maybe I wanted to be an architect.<br>When                       I heard of famous designers Raymond Loewy and Dieter Rams, I knew exactly what I wanted to be. 
+                    I aspire to be the next great designer.<br>With my passion to create and my desire to help people, industrial design is                         the perfect match for me. 
+                </p>
+                <a class="btn btn-inverse" href="img/Resume.jpg" target="_blank">Resume</a>
+                <h3><br>Check out my work!</h3>
             </div>
-
+        
+        </div>
+        
+        <div class="container">
+        
+            <div class="row-fluid">
+                
+                <div class="span3">
+                    <a href="Mickey.html">
+                        <img src="img/MickeyStuff/mickey">
+                        <span class="caption">ESTRANGED MICKEY</span>
+                    </a>
+                </div>
+                
+                <div class="span3">
+                    <a href="chess.html">
+                        <img src="img/chess.jpg">
+                        <span class="caption">OPULET PERIL</span>
+                    </a>
+                </div>
+                
+                <div class="span3">
+                    <a href="BowlingBall.html">
+                        <img src="img/Bowling.jpg">
+                        <span class="caption">BOWLING BALL<br>PACKAGE</span>
+                    </a>
+                </div>
+                
+                <div class="span3">
+                    <a href="Bedmate.html">
+                        <img src="img/bedmate2.jpg">
+                        <span class="caption">BEDMATE</span>
+                    </a>
+                </div>
+                 
+            </div>
+    
+        </div>
+            
+            <div class="footer">
+                    
+            <p class="contactthumbs">
+                
+                <a href="https://www.behance.net/jackthrun8354" target="_blank"><img src="img/icons/behance-01.png" width="40px"></a>
+                <a href="mailto:jackthrun@gmail.com"><img src="img/icons/email-01.png" width="40px"></a>
+                <a href="https://instagram.com/jackthrun/" target="_blank"><img src="img/icons/instagram-01.png" width="40px"></a>
+                
+            </p>    
+                
+            <p class="muted">&copy; 2015 Jack Thrun Industrial Design. All Rights Reserved.</p>
+        
+            </div>
+            
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+  
     </body>
+        
 </html>

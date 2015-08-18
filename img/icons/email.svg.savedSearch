@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CompatibleVersion</key>
+	<integer>1</integer>
+	<key>RawQuery</key>
+	<string>((** = "email*"cdw))</string>
+	<key>RawQueryDict</key>
+	<dict>
+		<key>FinderFilesOnly</key>
+		<true/>
+		<key>RawQuery</key>
+		<string>((** = "email*"cdw))</string>
+		<key>SearchScopes</key>
+		<array>
+			<string>/Users/jackthrun/.Trash</string>
+		</array>
+		<key>UserFilesOnly</key>
+		<true/>
+	</dict>
+	<key>SearchCriteria</key>
+	<dict>
+		<key>CurrentFolderPath</key>
+		<array>
+			<string>/Users/jackthrun/.Trash</string>
+		</array>
+		<key>FXCriteriaSlices</key>
+		<array>
+			<dict>
+				<key>criteria</key>
+				<array>
+					<string>com_apple_UserSearchStringAttribute</string>
+					<integer>104</integer>
+				</array>
+				<key>displayValues</key>
+				<array>
+					<string>Items matching text</string>
+					<string>email</string>
+				</array>
+				<key>rowType</key>
+				<integer>0</integer>
+				<key>subrows</key>
+				<array/>
+			</dict>
+		</array>
+		<key>FXScope</key>
+		<integer>1396925286</integer>
+		<key>FXScopeArrayOfPaths</key>
+		<array>
+			<string>/Users/jackthrun/.Trash</string>
+		</array>
+	</dict>
+	<key>SuggestedAttributes</key>
+	<array/>
+	<key>ViewSettings</key>
+	<dict>
+		<key>GroupBy</key>
+		<string>Date Modified</string>
+		<key>IconViewSettings</key>
+		<dict>
+			<key>arrangeBy</key>
+			<string>name</string>
+			<key>backgroundColorBlue</key>
+			<real>1</real>
+			<key>backgroundColorGreen</key>
+			<real>1</real>
+			<key>backgroundColorRed</key>
+			<real>1</real>
+			<key>backgroundType</key>
+			<integer>0</integer>
+			<key>gridOffsetX</key>
+			<real>0.0</real>
+			<key>gridOffsetY</key>
+			<real>0.0</real>
+			<key>gridSpacing</key>
+			<real>54</real>
+			<key>iconSize</key>
+			<real>64</real>
+			<key>labelOnBottom</key>
+			<true/>
+			<key>showIconPreview</key>
+			<true/>
+			<key>showItemInfo</key>
+			<false/>
+			<key>textSize</key>
+			<real>12</real>
+			<key>viewOptionsVersion</key>
+			<integer>1</integer>
+		</dict>
+		<key>WindowState</key>
+		<dict>
+			<key>ContainerShowSidebar</key>
+			<true/>
+			<key>PreviewPaneVisibility</key>
+			<false/>
+			<key>ShowPathbar</key>
+			<true/>
+			<key>ShowSidebar</key>
+			<true/>
+			<key>ShowStatusBar</key>
+			<false/>
+			<key>ShowTabView</key>
+			<false/>
+			<key>ShowToolbar</key>
+			<true/>
+			<key>SidebarWidth</key>
+			<integer>141</integer>
+			<key>WindowBounds</key>
+			<string>{{335, 91}, {947, 703}}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
