@@ -87,6 +87,6 @@ a:hover .caption {
     opacity: 1;
 }
 
-.icon-bar {
-    font-size: 200px;
+.dropdown-backdrop {
+    position: static;
 }
