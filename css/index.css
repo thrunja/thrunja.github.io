@@ -90,3 +90,8 @@ a:hover .caption {
 .dropdown-backdrop {
     position: static;
 }
+
+.row-fluid {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
