@@ -48,7 +48,7 @@ a:hover .caption {
 
 .span4 img {
     padding-bottom: 2%;
-    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(make one if want to change);
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
@@ -56,7 +56,7 @@ a:hover .caption {
     transition: all .2s ease;
 }
 
-.span4 img:hover {
+.span3 img:hover {
   -webkit-filter: grayscale(0);
 }
 
