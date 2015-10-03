@@ -46,7 +46,7 @@ a:hover .caption {
     opacity: 1;
 }
 
-.span3 img {
+.span4 img {
     padding-bottom: 2%;
     -webkit-filter: grayscale(1);
     -webkit-transition: all .2s ease;
@@ -56,7 +56,7 @@ a:hover .caption {
     transition: all .2s ease;
 }
 
-.span3 img:hover {
+.span4 img:hover {
   -webkit-filter: grayscale(0);
 }
 
