@@ -310,6 +310,8 @@ a:focus {
 
 .span8 {
   width: 620px;
+    text-align: center;
+    text-align-last: center;
 }
 
 .span7 {
@@ -318,10 +320,13 @@ a:focus {
 
 .span6 {
   width: 460px;
+        text-align: center;
+    text-align-last: center;
 }
 
 .span5 {
   width: 380px;
+
 }
 
 .span4 {
@@ -6049,7 +6054,7 @@ a.badge:focus {
 }
 
 .hero-unit {
-  padding: 50px 50px 20px 50px;
+  padding: 50px 0px 20px 0px;
   margin-top: 0%;
   font-size: 12px;
   font-weight: 200;
