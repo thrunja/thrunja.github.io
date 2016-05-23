@@ -227,7 +227,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: black;
-  background-color: white;
+  background-color: #ebebec;
 }
 
 a {
@@ -4353,7 +4353,7 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: white;
+  background-color: #ebebec;
 }
 
 .navbar-inner:before,
