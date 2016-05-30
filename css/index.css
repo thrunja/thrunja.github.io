@@ -20,9 +20,6 @@ li {
     font-weight: 200;
 }
 
-.container {
-    text-align: center;
-}
 
 .caption {
     display: none;
@@ -96,7 +93,59 @@ a:hover .caption {
     padding-bottom: 1%;
 }
 
-.span6 {
-    margin: 0 auto;
-    float: none;
+p.contactthumbs {
+    text-align: center;
+    padding-top: 5%;
+}
+
+p.muted {
+    text-align: center;
+}
+
+hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+}
+
+.bottom {
+    position: relative;
+    bottom: 30px;
+}
+
+.container-fluid img {
+    padding-bottom: 1%;
+    position: relative;
+}
+
+.container-fluid a {
+    color: #808080;
+}
+
+.container-fluid a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.scroll_images {
+    position: relative;
+    bottom: 90px;
+}
+
+.return {
+    position: relative;
+    bottom: 30px;
+}
+
+.btn-navbar {
+    background: #EBEBEB;
+    border: #EBEBEB;
+    box-shadow: none;
+}
+
+.homepage {
+    padding-top: 5%;
 }

@@ -312,6 +312,8 @@ a:focus {
   width: 620px;
     text-align: center;
     text-align-last: center;
+    position: relative;
+    bottom: 60px;
 }
 
 .span7 {
@@ -320,17 +322,18 @@ a:focus {
 
 .span6 {
   width: 460px;
-        text-align: center;
-    text-align-last: center;
 }
 
 .span5 {
   width: 380px;
+    position: relative;
+    bottom: 30px;
 
 }
 
 .span4 {
   width: 300px;
+    text-align: center;
 }
 
 .span3 {
@@ -637,8 +640,8 @@ a:focus {
 }
 
 .container-fluid {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 150px;
+  padding-left: 150px;
   *zoom: 1;
 }
 
@@ -654,7 +657,9 @@ a:focus {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0;
+    line-height: 1.5;
+    font-weight: 200;
 }
 
 .lead {
@@ -740,15 +745,21 @@ a.text-success:focus {
 h1,
 h2,
 h3,
-h4,
+h4 {
+    font-weight: 600;
+    line-height: 0;
+    position: relative;
+}
+
 h5,
 h6 {
-  margin: 0px 0;
+  margin: 10px 0;
   font-family: inherit;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 400;
+  line-height: 0;
   color: inherit;
   text-rendering: optimizelegibility;
+    padding-bottom: 10px;
 }
 
 h1 small,
@@ -2923,6 +2934,9 @@ table th[class*="span"],
   border: 1px solid rgba(0, 0, 0, 0.2);
   *border-right-width: 2px;
   *border-bottom-width: 2px;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
      -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -2950,7 +2964,7 @@ table th[class*="span"],
   display: block;
   padding: 3px 20px;
   clear: both;
-  font-weight: 200;
+  font-weight: normal;
   line-height: 20px;
   color: #333333;
   white-space: nowrap;
@@ -2962,12 +2976,12 @@ table th[class*="span"],
 .dropdown-submenu:focus > a {
   color: #ffffff;
   text-decoration: none;
-  background-color: black;
-  background-image: -moz-linear-gradient(top, black, black);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(black));
-  background-image: -webkit-linear-gradient(top, black, black);
-  background-image: -o-linear-gradient(top, black, black);
-  background-image: linear-gradient(to bottom, black, black);
+  background-color: #888888;
+  background-image: -moz-linear-gradient(top, #999999, #888888);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#999999), to(#888888));
+  background-image: -webkit-linear-gradient(top, #999999, #888888);
+  background-image: -o-linear-gradient(top, #999999, #888888);
+  background-image: linear-gradient(to bottom, #999999, #888888);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
 }
@@ -2977,7 +2991,7 @@ table th[class*="span"],
 .dropdown-menu > .active > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: red;
+  background-color: #0081c2;
   background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
   background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
@@ -3200,17 +3214,38 @@ button.close {
 .btn {
   display: inline-block;
   *display: inline;
-  padding: 4px 20px;
+  padding: 4px 12px;
   margin-bottom: 0;
   *margin-left: .3em;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   color: #333333;
   text-align: center;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
   cursor: pointer;
-
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 0px solid #cccccc;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .btn:hover,
@@ -4346,6 +4381,7 @@ input[type="submit"].btn.btn-mini {
 .navbar {
   *position: relative;
   *z-index: 2;
+  margin-bottom: 20px;
   overflow: visible;
 }
 
@@ -4384,6 +4420,7 @@ input[type="submit"].btn.btn-mini {
   font-size: 20px;
   font-weight: 100;
   color: #777777;
+  text-shadow: 0;
 }
 
 .navbar .brand:hover,
@@ -4394,16 +4431,16 @@ input[type="submit"].btn.btn-mini {
 .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
-  color: black;
+  color: #777777;
 }
 
 .navbar-link {
-  color: black;
+  color: #777777;
 }
 
 .navbar-link:hover,
 .navbar-link:focus {
-  color: #777777;
+  color: #333333;
 }
 
 .navbar .divider-vertical {
@@ -4540,8 +4577,19 @@ input[type="submit"].btn.btn-mini {
   top: 0;
 }
 
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+
+}
+
 .navbar-fixed-bottom {
   bottom: 0;
+}
+
+.navbar-fixed-bottom .navbar-inner {
+  -webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .nav {
@@ -4564,7 +4612,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: black;
+  color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -4575,7 +4623,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #777777;
+  color: #333333;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4594,10 +4642,16 @@ input[type="submit"].btn.btn-mini {
 .navbar .btn-navbar {
   display: none;
   float: right;
-  padding: 8px 10px;
+  padding: 7px 10px;
   margin-right: 5px;
   margin-left: 5px;
-  color: black;
+  color: #EBEBEB ;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #EBEBEB	;
+
+  background-repeat: repeat-x;
+  border-color: #EBEBEB ;
+  border-color: #EBEBEB	;
 
 }
 
@@ -6054,12 +6108,16 @@ a.badge:focus {
 }
 
 .hero-unit {
-  padding: 50px 0px 20px 0px;
-  margin-top: 0%;
+  padding: 2% 0px 50px 0px;
+  margin-top: 20px;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 100;
   line-height: 30px;
   color: inherit;
+  background-color: transparent;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
 }
 
 .hero-unit h1 {
