@@ -99,7 +99,7 @@ sub {
 }
 
 img {
-  width: auto\9;
+  width: auto/9;
   height: auto;
   max-width: 100%;
   vertical-align: middle;
@@ -227,7 +227,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: black;
-  background-color: #ebebec;
+  background-color: white;
 }
 
 a {
@@ -4389,7 +4389,7 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #ebebec;
+  background-color: white;
 }
 
 .navbar-inner:before,

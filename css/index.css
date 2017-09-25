@@ -29,7 +29,7 @@ li {
     right: 0;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     opacity: 0;
 }
 
@@ -45,7 +45,7 @@ a:hover .caption {
 
 .span4 img {
     padding-bottom: 2%;
-    -webkit-filter: grayscale(make one if want to change);
+    -webkit-filter: grayscale (make one if want to change);
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
@@ -53,9 +53,16 @@ a:hover .caption {
     transition: all .2s ease;
 }
 
-.span3 img:hover {
-  -webkit-filter: grayscale(0);
+.span4 img:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
+
+
 
 .span8 {
     margin: 0 auto;
@@ -73,6 +80,10 @@ a:hover .caption {
     bottom: 0px;
     text-align: center;
     bottom: -40px; 
+}
+
+.contactthumbs {
+    padding-bottom: 3%;
 }
 
 .contactthumbs img {
@@ -113,7 +124,17 @@ hr {
 
 .bottom {
     position: relative;
-    bottom: 30px;
+    bottom: 40px;
+}
+
+.bottom_2 {
+    position: relative;
+    bottom: 15px;
+}
+
+.top {
+    position: relative;
+    bottom: 5px;
 }
 
 .container-fluid img {
@@ -141,7 +162,7 @@ hr {
 }
 
 .btn-navbar {
-    background: #EBEBEB;
+    background: white;
     border: #EBEBEB;
     box-shadow: none;
 }
