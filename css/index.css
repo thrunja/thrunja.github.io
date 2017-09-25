@@ -62,8 +62,6 @@ a:hover .caption {
     transition: all 1s ease;
 }
 
-
-
 .span8 {
     margin: 0 auto;
     float: none;
@@ -103,6 +101,7 @@ a:hover .caption {
     padding-top: 1%;
     padding-bottom: 1%;
 }
+
 
 p.contactthumbs {
     text-align: center;
