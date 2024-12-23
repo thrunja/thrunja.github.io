@@ -187,7 +187,6 @@
 
     <img class="pulsating-image" src="Logo.png" alt="Pulsating Image">
 
-    <!-- Update button action to navigate to the new HTML page -->
-    <button onclick="window.location.href='winner.html'">Enter to Win!</button>
+    <button onclick="location.href='7.jpg'">Enter to Win!</button>
 </body>
 </html>

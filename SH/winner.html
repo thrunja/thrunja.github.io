@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page - Squash Hunters Sweepstakes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            cursor: url('custom-cursor.png'), auto;
+        }
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Only 7.jpg as the background, no blur */
+        .background-container .main {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .pulsating-image {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30vw; /* Logo size is 30% of the viewport width */
+            height: auto;
+            animation: shrinkExpand 2s infinite;
+        }
+
+        @keyframes shrinkExpand {
+            0%, 100% {
+                transform: translateX(-50%) scale(1);
+            }
+            50% {
+                transform: translateX(-50%) scale(1.3);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .pulsating-image {
+                width: 50vw;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .pulsating-image {
+                width: 60vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <!-- Only 7.jpg is used as the background image with no blur -->
+        <img class="main" src="7.jpg" alt="Background 7">
+    </div>
+
+    <img class="pulsating-image" src="Logo.png" alt="Pulsating Image">
+</body>
+</html>
