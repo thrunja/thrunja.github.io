@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquashHunters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            cursor: url('custom-cursor.png'), auto;
+        }
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .background-container .blurred {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(20px);
+            opacity: 0;
+            animation: fade 10s infinite;
+        }
+
+        .background-container .main {
+            position: absolute;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            animation: fade 10s infinite;
+            filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
+            mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+            -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .background-container .blurred:nth-child(1),
+        .background-container .main:nth-child(2) {
+            animation-delay: 0s;
+        }
+
+        .background-container .blurred:nth-child(3),
+        .background-container .main:nth-child(4) {
+            animation-delay: 2s;
+        }
+
+        .background-container .blurred:nth-child(5),
+        .background-container .main:nth-child(6) {
+            animation-delay: 4s;
+        }
+
+        .background-container .blurred:nth-child(7),
+        .background-container .main:nth-child(8) {
+            animation-delay: 6s;
+        }
+
+        .background-container .blurred:nth-child(9),
+        .background-container .main:nth-child(10) {
+            animation-delay: 8s;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        button {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #ff0000, #ff7300);
+            color: white;
+            border: 3px solid #000000;
+            border-radius: 30px;
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            animation: carnivalColors 1s infinite;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        button:hover {
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        @keyframes carnivalColors {
+            0% {
+                background: linear-gradient(45deg, #ff0000, #ff7300);
+            }
+            25% {
+                background: linear-gradient(45deg, #ff7300, #ffd700);
+            }
+            50% {
+                background: linear-gradient(45deg, #ffd700, #32cd32);
+            }
+            75% {
+                background: linear-gradient(45deg, #32cd32, #1e90ff);
+            }
+            100% {
+                background: linear-gradient(45deg, #1e90ff, #ff0000);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <img class="blurred" src="1.jpg" alt="Background 1">
+        <img class="main" src="1.jpg" alt="Background 1">
+        <img class="blurred" src="2.jpg" alt="Background 2">
+        <img class="main" src="2.jpg" alt="Background 2">
+        <img class="blurred" src="3.jpg" alt="Background 3">
+        <img class="main" src="3.jpg" alt="Background 3">
+        <img class="blurred" src="4.jpg" alt="Background 4">
+        <img class="main" src="4.jpg" alt="Background 4">
+        <img class="blurred" src="5.jpg" alt="Background 5">
+        <img class="main" src="5.jpg" alt="Background 5">
+    </div>
+
+    <button onclick="location.href='https://example.com/success'">Enter to Win!</button>
+</body>
+</html>
