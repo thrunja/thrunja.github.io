@@ -15,6 +15,7 @@
             height: 100%;
             font-family: Arial, sans-serif;
             cursor: url('custom-cursor.png'), auto;
+            background-color: black;
         }
 
         .background-container {
@@ -24,6 +25,17 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+        }
+
+        /* Static description image */
+        .description-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1; /* Ensures this image stays above other images */
         }
 
         .background-container .blurred {
@@ -177,6 +189,9 @@
 </head>
 <body>
     <div class="background-container">
+        <!-- Static description image that stays above all other images -->
+        <img class="description-image" src="description.png" alt="Description Image">
+        
         <img class="blurred" src="1.jpg" alt="Background 1">
         <img class="main" src="1.jpg" alt="Background 1">
         <img class="main" src="2.jpg" alt="Background 2">
@@ -187,7 +202,6 @@
 
     <img class="pulsating-image" src="Logo.png" alt="Pulsating Image">
 
-    <!-- Update button action to navigate to the new HTML page -->
-    <button onclick="window.location.href='winner.html'">Enter to Win!</button>
+    <button onclick="location.href='winner.html'">Enter to Win!</button>
 </body>
 </html>
