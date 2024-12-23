@@ -35,7 +35,7 @@
             object-fit: cover;
             filter: blur(20px);
             opacity: 0;
-            animation: fade 10s infinite;
+            animation: fade 15s infinite; /* 15s cycle for 5 images */
         }
 
         .background-container .main {
@@ -47,45 +47,27 @@
             left: 50%;
             transform: translate(-50%, -50%);
             opacity: 0;
-            animation: fade 10s infinite;
+            animation: mainFade 15s infinite; /* 15s cycle for 5 images */
         }
 
-        .background-container .blurred:nth-child(1),
-        .background-container .main:nth-child(2) {
-            animation-delay: 0s;
-        }
-
-        .background-container .blurred:nth-child(3),
-        .background-container .main:nth-child(4) {
-            animation-delay: 2s;
-        }
-
-        .background-container .blurred:nth-child(5),
-        .background-container .main:nth-child(6) {
-            animation-delay: 4s;
-        }
-
-        .background-container .blurred:nth-child(7),
-        .background-container .main:nth-child(8) {
-            animation-delay: 6s;
-        }
-
-        .background-container .blurred:nth-child(9),
-        .background-container .main:nth-child(10) {
-            animation-delay: 8s;
-        }
-
-        @keyframes fade {
+        /* Keyframes for cycling images (with 3s per image) */
+        @keyframes mainFade {
             0% {
                 opacity: 0;
             }
-            25% {
+            20% {
                 opacity: 1;
             }
-            50% {
+            40% {
+                opacity: 0;
+            }
+            40.01% {
+                opacity: 0;
+            }
+            60% {
                 opacity: 1;
             }
-            75% {
+            80% {
                 opacity: 0;
             }
             100% {
@@ -93,12 +75,29 @@
             }
         }
 
+        /* Adjust each main image's delay to cycle in order */
+        .background-container .main:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .background-container .main:nth-child(2) {
+            animation-delay: 3s;
+        }
+        .background-container .main:nth-child(3) {
+            animation-delay: 6s;
+        }
+        .background-container .main:nth-child(4) {
+            animation-delay: 9s;
+        }
+        .background-container .main:nth-child(5) {
+            animation-delay: 12s;
+        }
+
         .pulsating-image {
             position: absolute;
-            top: 10%;
+            top: 5%; /* Logo moved closer to the top */
             left: 50%;
             transform: translateX(-50%);
-            width: 300px;
+            width: 30vw; /* Logo size is 30% of the viewport width */
             height: auto;
             animation: shrinkExpand 2s infinite;
         }
@@ -117,12 +116,12 @@
             bottom: 10%;
             left: 50%;
             transform: translateX(-50%);
-            padding: 15px 40px;
+            padding: 1vw 2.5vw; /* Button padding is 1vw 2.5vw */
             background: linear-gradient(45deg, #ff0000, #ff7300);
             color: white;
             border: 3px solid #000000;
             border-radius: 30px;
-            font-size: 22px;
+            font-size: 1.5vw; /* Font size is 1.5vw */
             font-weight: bold;
             cursor: pointer;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
@@ -151,19 +150,38 @@
                 background: linear-gradient(45deg, #1e90ff, #ff0000);
             }
         }
+
+        /* Media queries for smaller screen sizes (e.g., iPhone) */
+        @media (max-width: 600px) {
+            .pulsating-image {
+                width: 50vw; /* Prevent logo from shrinking too much on small screens */
+            }
+
+            button {
+                font-size: 4vw; /* Adjust font size of button */
+                padding: 2vw 5vw; /* Adjust button padding */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .pulsating-image {
+                width: 60vw; /* Further increase logo size on even smaller screens */
+            }
+
+            button {
+                font-size: 5vw; /* Further increase font size on smaller screens */
+                padding: 3vw 6vw; /* Adjust button padding */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="background-container">
         <img class="blurred" src="1.jpg" alt="Background 1">
         <img class="main" src="1.jpg" alt="Background 1">
-        <img class="blurred" src="2.jpg" alt="Background 2">
         <img class="main" src="2.jpg" alt="Background 2">
-        <img class="blurred" src="3.jpg" alt="Background 3">
         <img class="main" src="3.jpg" alt="Background 3">
-        <img class="blurred" src="4.jpg" alt="Background 4">
         <img class="main" src="4.jpg" alt="Background 4">
-        <img class="blurred" src="5.jpg" alt="Background 5">
         <img class="main" src="5.jpg" alt="Background 5">
     </div>
 
