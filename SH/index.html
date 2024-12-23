@@ -46,6 +46,18 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            opacity: 0; /* Start with the video invisible */
+            animation: fadeIn 2s forwards; /* Apply fade-in animation */
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
 
         .pulsating-image {
