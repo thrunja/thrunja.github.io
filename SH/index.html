@@ -137,7 +137,7 @@
         <img class="description-image" src="Description.png" alt="Description Image">
         
         <!-- Video element replacing the GIF -->
-        <video id="backgroundVideo" class="main" autoplay muted loop>
+        <video id="backgroundVideo" class="main" autoplay muted loop playsinline preload="auto">
             <source src="1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -151,6 +151,14 @@
         // Adjust the playback speed of the video
         const video = document.getElementById('backgroundVideo');
         video.playbackRate = 0.75; // Slow the video down to 75% of its original speed
+
+        // Ensure the video plays on page load as a fallback
+        document.addEventListener('DOMContentLoaded', () => {
+            video.muted = true; // Ensure the video is muted
+            video.play().catch(error => {
+                console.error('Autoplay failed:', error);
+            });
+        });
     </script>
 </body>
 </html>
